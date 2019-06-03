@@ -1,0 +1,26 @@
+Input         | Bytes sent on bus
+Light         | 00 32 01 00 00 83 5F
+Brake         | 00 32 01 00 00 23 FF
+Light + Brake | 00 32 01 00 00 A3 7F
+ECO           | 00 32 01 00 00 02 DE
+
+Data      | checksum
+32 01 03  | DF
+32 01 83  | 5F
+32 01 23  | FF
+32 01 A3  | 7F
+32 01 02  | DE
+32 01 22  | FE
+32 01 82  | 5E
+32 01 A2  | 7E
+
+Byte |  Data
+1    |  FF
+2    |  AA
+3    |
+4    |  Throttle
+5    | 
+6    |
+7    |
+8    | bit 1 = Light, bit 3 = brake, bit 8 = drivemode (0 = eco, 1 = std)
+9    |
